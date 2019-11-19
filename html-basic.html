@@ -7,7 +7,7 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Lorem.</h1>
+  <h1 id="up">Lorem.</h1>
   <h2>Lorem ipsum.</h2>
   <h3>Lorem ipsum dolor.</h3>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id maxime corrupti, nulla earum possimus vitae omnis odio pariatur officia! Odit ipsa alias labore nostrum sint ex non repellendus, doloremque et.</p>
@@ -126,9 +126,47 @@
     <button type="reset">重置</button>
   </form>
   <hr>
-  <table></table>
+  <table border="2">
+    <caption>货品列表</caption>
+    <col>
+    <col bgcolor="red">
+    <tr>
+      <th>编号</th>
+      <th>品名</th>
+      <th>进价</th>
+      <th>出价</th>
+    </tr>
+    <tr>
+      <th>001</th>
+      <td>苹果</td>
+      <td rowspan="2">5</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>001</th>
+      <td>橘子</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>001</th>
+      <td>香蕉</td>
+      <td>5</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>001</th>
+      <td>山竹</td>
+      <td>5</td>
+      <td>7</td>
+    </tr>
+  </table>
   <hr>
-  <img src="" alt="">
+  <img src="https://drscdn.500px.org/photo/174778125/m%3D1170_k%3D1/2841ccf2a3720e8e794a6a6930f6ff2c" alt="图片失踪" title="img title" width="300px" height="500px" usemap="#map">
+  <map name="map">
+    <area shape="circle" coords="130,313,30" href="https://www.mi.com/"  alt=""target="_blank">
+    <area shape="rect" coords="73,132,179,192" href="#up" alt="">
+    <area shape="poly" coords="59,86,20,310,170,424,224,305,196,86" href="#up" alt="" >
+  </map>
   <hr>
   <a href="http://list.mi.com/" target="page">点击我会在下面的<frame>里打开小米商城，但为什么打不开呢？</a><br>
   <iframe src="https://nodejs.org/docs/latest-v11.x/api/" frameborder="0" name="page"></iframe>
