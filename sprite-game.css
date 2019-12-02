@@ -1,0 +1,36 @@
+.boy {
+  background-image: url(boy-game-sprite.jpg);
+  display: inline-block;
+}
+
+.boy-one {
+  width: 130px;
+  height: 150px;
+  background-position: -408px -244px;
+  position: relative;
+
+}
+.boy-two {
+  width: 130px;
+  height: 150px;
+  background-position: -530px -244px;
+  position: relative;
+}
+.boy-three {
+  width: 130px;
+  height: 150px;
+  background-position: -645px -244px;
+  position: relative;
+}
+.boy-four {
+  width: 130px;
+  height: 150px;
+  background-position: -775px -244px;
+  position: relative;
+}
+.boy-five {
+  width: 130px;
+  height: 150px;
+  background-position: -910px -244px;
+  position: relative;
+}
