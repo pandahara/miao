@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    input {
+      display: none;
+    }
+    .up + .up-l {
+      border: 4px solid #cbcbcb;
+      width: 260px;
+      height: 142px;
+      border-radius: 71px;
+      display: inline-block;
+      padding: 6px;
+      transition: 0.3s linear;
+      box-sizing: border-box;
+    }
+    .up:checked + .up-l {
+      background-color: #30f349;
+      border-color: #30f349;
+      
+    }
+    .up + .up-l::before {
+      content: "";
+      width: 122px;
+      height: 122px;
+      border-radius: 50%;
+      display: inline-block;
+      background-color: white;
+      box-shadow: 0px 0px 15px gray;
+      transition: 0.3s linear;
+    }
+    .up:checked + .up-l::before {
+      margin-left: 115px;
+    }
+
+    .down-a + .down-l-a {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 4px solid black;
+      position: relative;
+    }
+    .down-b + .down-l-b {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 4px solid black;
+      position: relative;
+    }
+    .down-c + .down-l-c {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 4px solid black;
+      position: relative;
+    }
+    .down-a + .down-l-a::before {
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height: 1px;
+      border-radius: 50% ;
+      background-color: white;
+      box-shadow: 0 0 0 0 rgb(3,193,95);
+      transition:box-shadow 0.4s linear, background-color 0s 0.4s linear;
+      margin-left: 16px;
+    }
+    .down-b + .down-l-b::before {
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height: 1px;
+      border-radius: 50% ;
+      box-shadow: 0 0 0 0 rgb(3,193,95);
+      transition:box-shadow 0.4s linear, background-color 0s 0.4s linear;
+      margin-left: 16px;
+    }
+    .down-c + .down-l-c::before {
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height: 1px;
+      border-radius: 50% ;
+      box-shadow: 0 0 0 0 rgb(3,193,95);
+      transition:box-shadow 0.4s linear, background-color 0s 0.4s linear;
+      margin-left: 16px;
+    }
+    .down-a:checked + .down-l-a::before {
+      transition:box-shadow 0.4s linear, background-color 0s 0s linear;
+      background-color: rgb(3,193,95);
+      box-shadow: 0 0 0 10px rgb(3,193,95);
+    }
+    .down-b:checked + .down-l-b::before {
+      transition:box-shadow 0.4s linear, background-color 0s 0s linear;
+      background-color: rgb(3,193,95);
+      box-shadow: 0 0 0 10px rgb(3,193,95);
+    }
+    .down-c:checked + .down-l-c::before {
+      transition:box-shadow 0.4s linear, background-color 0s 0s linear;
+      background-color: rgb(3,193,95);
+      box-shadow: 0 0 0 10px rgb(3,193,95);
+    }
+    .down-a:checked + .down-l-a {
+      border-color: rgb(3,193,95);
+    }
+    .down-b:checked + .down-l-b {
+      border-color: rgb(3,193,95);
+    }
+    .down-c:checked + .down-l-c {
+      border-color: rgb(3,193,95);
+    }
+
+  </style>
+</head>
+<body>
+  <input type="checkbox" name="" id="up" class="up">
+  <label for="up" class="up-l"></label><br>
+  <input type="radio" name="a" id="down-a" class="down-a">
+  <label for="down-a" class="down-l-a"></label>
+  <spam>Radio Button</span><br><br>
+  <input type="radio" name="a" id="down-b" class="down-b">
+  <label for="down-b" class="down-l-b"></label>
+  <spam>Radio Button</span><br><br>
+  <input type="radio" name="a" id="down-c" class="down-c"> 
+  <label for="down-c" class="down-l-c"></label>
+  <spam>Radio Button</span>
+</body>
+</html>
