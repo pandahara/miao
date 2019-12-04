@@ -120,6 +120,31 @@
     .down-c:checked + .down-l-c {
       border-color: rgb(3,193,95);
     }
+    .down-l-a::after {
+      content: "Radio Button";
+      position: absolute;
+      white-space: nowrap;
+      font-size:  24px;
+      left: 40px;
+    }
+    .down-l-b::after {
+      content: "Radio Button";
+      position: absolute;
+      white-space: nowrap;
+      font-size:  24px;
+      left: 40px;
+    }
+    .down-l-c::after {
+      content: "Radio Button";
+      position: absolute;
+      white-space: nowrap;
+      font-size:  24px;
+      left: 40px;
+    
+    }
+    label {
+      margin: 30px;
+    }
 
   </style>
 </head>
@@ -127,13 +152,10 @@
   <input type="checkbox" name="" id="up" class="up">
   <label for="up" class="up-l"></label><br>
   <input type="radio" name="a" id="down-a" class="down-a">
-  <label for="down-a" class="down-l-a"></label>
-  <spam>Radio Button</span><br><br>
+  <label for="down-a" class="down-l-a"></label><br>
   <input type="radio" name="a" id="down-b" class="down-b">
-  <label for="down-b" class="down-l-b"></label>
-  <spam>Radio Button</span><br><br>
+  <label for="down-b" class="down-l-b"></label><br>
   <input type="radio" name="a" id="down-c" class="down-c"> 
   <label for="down-c" class="down-l-c"></label>
-  <spam>Radio Button</span>
 </body>
 </html>
