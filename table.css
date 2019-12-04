@@ -126,18 +126,33 @@ td {
   background-color: rgb(245,198,203);
   border-top: 1px solid rgb(237,150,158);
 }
-.table .bg-primary th,.table .bg-primary td{
+.table.table-bg {
+  box-sizing: content-box;
+  border: none;
+  background-color: rgb(52,58,64);
+}
+.table.table-bg th,
+.table.table-bg td{
+  border: none;
+}
+.table.table-bg .bg-primary{
   background-color: rgb(0,123,255);
   border:1px solid rgb(0,123,255) ;
+ 
 }
-.table .bg-success th,.table .bg-success td{
+.table.table-bg .bg-success{
   background-color: rgb(40,167,69);
   border:1px solid rgb(40,167,69) ;
 }
-.table .bg-warning th,.table .bg-warning td{
+.table.table-bg .bg-warning{
   background-color: rgb(23,162,184);
   border:1px solid rgb(23,162,184) ;
 }
+.table.table-bg tr:hover {
+  background-color: rgb(67,73,78);
+}
+
+
 .table-responsive {
   width: 800px;
   overflow-x: scroll;
