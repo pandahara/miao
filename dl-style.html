@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      font-size: 0;
+    }
+    dl {
+      width: 600px;
+      font-size: 16px;
+    }
+    [a] {
+      display: inline-block;
+      background-color: red;
+      width: 80px;
+      position: relative;
+      margin: 10px;
+      font-size: 16px;
+    }
+    dd {
+      display: inline-block;
+      background-color: gray;
+      width: 80px;
+      margin: 10px;   
+      font-size: 16px;   
+    }
+      dd:nth-of-type(6n+6) {
+      margin-left: 110px;
+    }
+
+  </style>
+</head>
+<body>
+  <dl>
+    <dt a>0</dt><dd>1</dd><dd>2</dd><dd>3</dd><dd>4</dd><dd>5</dd><dd>6</dd><dd>7</dd><dd>8</dd><dd>9</dd>
+  </dl>
+  <dl>
+    <dt a>10<dd>11</dd><dd>12</dd><dd>13</dd><dd>14</dd><dd>15</dd><dd>16</dd><dd>17</dd><dd>18</dd><dd>19</dd></dt> 
+  </dl>
+  
+</body>
+</html>
